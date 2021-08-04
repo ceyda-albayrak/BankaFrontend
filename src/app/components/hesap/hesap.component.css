@@ -1,0 +1,68 @@
+.container
+{
+    background-color:#f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 2%;
+     border : 1px solid rgb(173, 173, 173);
+   
+}
+
+​
+
+.col-5{
+  
+   color: gray;
+    border-radius: 5px;
+    background-color: #efefef;
+    border : 1px solid rgb(173, 173, 173);
+   
+}
+.col-3,.col-4,.doviz{
+  
+    color: black;
+     border-radius: 5px;
+     background-color:#efefef;
+     border : 1px solid rgb(173, 173, 173);
+ }
+
+ .icon{
+     border-radius: 5px;
+ }
+
+.img{
+    background-color:  #f3f3f3;
+    border : 1px solid rgb(173, 173, 173);
+    width: 5%;
+    margin-top:0.4%;
+    margin-bottom: 0.4%;
+    margin-left: -0.5%;;
+    border-radius: 1px 5px 5px 0px;;
+}
+
+[contentEditable=false]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+.color{
+   color: #302f2f;
+   font-size: small;
+}
+
+.buyuk{
+    font-size: large;
+   
+}
+
+.form-floating>.form-control, .form-floating>.form-select,.col {
+    height: calc(2rem + 20px);
+    line-height: 1;
+}
+.select{
+    margin-left: -1%;
+    margin-right: 5%;
+}
+.cart{
+    margin-left: -22px;;
+}
+

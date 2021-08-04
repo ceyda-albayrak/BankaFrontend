@@ -1,0 +1,78 @@
+<div class="container mt-5 float-label ">
+  <h2> Hesap </h2>
+
+
+  <div class="row mb-1">
+    <div class="form-floating col-2 mt-1">
+      <input
+        type="text"
+        id="floatingInput"
+        name="tckn"
+        [(ngModel)]="tckn"
+        class="form-control"
+        placeholder="Borçlu Hesap"
+        value="tckn"
+        (keyup.enter)="getEkNobyId()"
+      />
+      
+      <label for="floatingInput">Borçlu Hesap</label>
+      
+      
+    </div>
+ 
+   
+   
+    <div class="form-floating col-2 mt-1 select">
+      <select
+        class="form-select"
+        [(ngModel)]="ekNo"
+        (change)="getHesapDetay()"
+        id="floatingSelect"
+        aria-label="Floating label select example"
+      >
+     <option ></option>
+        <option *ngFor="let data of eknolar" [value]="data.ekNo">
+          {{ data.ekNo }}
+        </option>
+      </select>
+      <label for="floatingSelect">Ek No</label>
+    </div>
+
+    <div
+      class="col col-3 m-1 form-floating "
+      data-text="Müşteri Adı Soyadı"
+      contentEditable="false"
+    >
+    <label for="floatingInput" *ngIf="dataLoaded == false">Müşteri Adı Soyadı</label>
+      <div class="col buyuk" *ngIf="dataLoaded == true"  id="floatingInput">
+      <label for="floatingInput" class="color">Müşteri Adı Soyadı</label><br>
+      {{ detay.ad | titlecase }}  {{ detay.soyad | titlecase }}
+       
+      </div>
+    </div>
+    <div
+      class="col col-2 m-1 doviz form-floating"
+      data-text="Şube No"
+      contentEditable="false"
+    >
+    <label for="floatingInput" *ngIf="dataLoaded == false">Şube No</label>
+      <div class="col buyuk" *ngIf="dataLoaded == true">
+        <label for="floatingInput" class="color">Şube No</label><br>
+       {{ detay.subeNo }}
+      </div>
+    </div>
+
+    <div
+      class="col col-2 m-1 doviz form-floating"
+      data-text="Bakiye"
+      contentEditable="false"
+    >
+    <label for="floatingInput" *ngIf="dataLoaded == false">Bakiye</label>
+      <div class="col buyuk" *ngIf="dataLoaded == true">
+        <label for="floatingInput" class="color">Bakiye</label><br>
+        {{ detay.bakiye }} {{ detay.dovizCinsi | uppercase }}
+      </div>
+    </div>
+  </div>
+</div>
+

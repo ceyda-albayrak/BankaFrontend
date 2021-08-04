@@ -1,0 +1,80 @@
+.container
+{
+    border : 1px solid rgb(173, 173, 173);
+    border-radius: 10px;
+    width: 100%;
+
+    background-color:  #f9f9f9;
+    margin-top: 5%;
+}
+
+.icon {
+    border : 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+}
+
+.musTip{
+   
+    border: 2px  solid black;
+    border-style: dotted;
+    margin-top: 10%;
+    border-radius: 5%;
+    margin-left: 2%;
+}
+
+
+.arama{
+   
+    border: 2px  solid black;
+    border-style: dotted;
+    margin-top: 10%;
+    border-radius: 5%;
+    margin-left: 2%;
+}
+
+.input{
+    margin-left: 0.1%;
+
+}
+
+.form-control{
+    margin: 2%;
+}
+
+.col-8{
+    margin-left: 2%;
+}
+
+
+.btn{
+    background-color: #efefef;
+    border : 1px solid rgb(173, 173, 173);
+}
+
+.cool5{
+  
+   color: black;
+    border-radius: 5px;
+    background-color: #efefef;
+    border : 1px solid rgb(173, 173, 173);
+}
+
+
+.img{
+    background-color:  #efefef;
+    border : 1px solid rgb(173, 173, 173);
+    width: 5%;
+    margin-top:0.4%;
+    margin-bottom: 0.4%;
+    margin-left: -0.5%;;
+    border-radius: 1px 5px 5px 0px;;
+}
+
+[contentEditable=false]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+
+.btn-danger{
+    background-color: darkgray;
+    border-color: darkgray;
+}
